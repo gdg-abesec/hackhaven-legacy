@@ -792,7 +792,7 @@ a,
             padding-left: 0rem !important;
           }
 
-          #Cont{
+          /* #Cont{
             background-color: #0ab331; 
             transition: background-color 0.5s ease-in-out; 
             font-size: 1.5rem;
@@ -805,7 +805,104 @@ a,
           }
           #Cont:hover{
             background-color: #057b21;
-          }
+          } */
+          #Cont {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #FF7A01;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#Cont span {
+  /* cursor: pointer; */
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#Cont span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#Cont:hover span {
+  padding-right: 25px;
+}
+
+#Cont:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.lab_head {
+    display: flex; /* Use Flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+    padding: 20px; /* Add some padding */
+    margin: 0 auto; /* Center the block */
+}
+
+.lab_head span {
+    display: flex; /* Use Flexbox for the span to align items */
+    align-items: center; /* Center items vertically */
+}
+
+.sub_lab_head {
+    display: flex; /* Use Flexbox for sub_lab_head */
+    flex-direction: column; /* Stack h4 and h6 vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.sub_lab_head h4 {
+    font-size: 1.5em; /* Adjust font size for h4 */
+    margin: 0; /* Remove default margin */
+}
+
+.sub_lab_head h6 {
+    font-size: 1.2em; /* Adjust font size for h6 */
+    margin: 0; /* Remove default margin */
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .lab_head {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .sub_lab_head {
+        align-items: center; /* Center items horizontally */
+    }
+
+    .sub_lab_head h4 {
+        font-size: 1.3em; /* Slightly smaller font size for h4 */
+    }
+
+    .sub_lab_head h6 {
+        font-size: 1em; /* Slightly smaller font size for h6 */
+    }
+}
+
+@media (max-width: 480px) {
+    .sub_lab_head h4 {
+        font-size: 1.1em; /* Further reduce font size for h4 */
+    }
+
+    .sub_lab_head h6 {
+        font-size: 0.9em; /* Further reduce font size for h6 */
+    }
+}
         </style>
       </div>
     </div>
@@ -1283,8 +1380,15 @@ a,
           <div id="w-node-_620c86dc-c5a8-1d37-9a29-7e45bc0d0019-bc0d0016" class="grid-fill hide-mobile-landscape">
           </div>
           <a href="#header" id="w-node-_620c86dc-c5a8-1d37-9a29-7e45bc0d001a-bc0d0016" class=" w-inline-block">
-            <img src="assets/GDGoriginal1-removebg-preview.png" loading="lazy" style="width: 300px !important;" alt="GDSC-ABESEC logo"
-              class="nav-logo__img" />
+            <!-- <img src="assets/GDGoriginal1-removebg-preview.png" loading="lazy" style="width: 300px !important;" alt="GDG-ABESEC logo"
+              class="nav-logo__img" /> -->
+              <div class="lab_head">
+              <span><img src="assets/sddefault-removebg-preview.png" loading="lazy" style="width: 60px !important; height: 45px; margin-right: 5px;" alt=""></span>
+              <div class="sub_lab_head" id="sub_lab_head">
+                <span><h4>Google Developer Groups</h4></span>
+                <span><h6>On Campus ABESEC</h6></span>
+              </div>
+              </div>
           </a>
           <div id="w-node-_620c86dc-c5a8-1d37-9a29-7e45bc0d001c-bc0d0016" class="nav-btn__w">
             <div class="nav-btn">
@@ -3049,7 +3153,7 @@ a,
         <div id="sponsors" style="padding: 20px 0px;text-align: center;">
           <div style="padding: 30px 0px;">
   
-            <h3 style="margin: 10px 0px;">Community Partners</h3>
+            <h3 style="margin: 10px 0px;">Event Partner</h3>
             <!-- <img src="./assets/sponsors/devfolio.png" alt="" style="width:200px"> -->
             <img style="border-radius: 50%;
             margin-top: 2rem;
@@ -3060,15 +3164,20 @@ a,
           <div style="padding: 30px 0px;">
   
             <h3 style="margin: 10px 0px;"> Past Sponsors</h3>
-  
-            <img src="https://seekvectors.com/files/download/Google%20Developers%20Group-01.png" alt="" style="width:200px">
-  
+            <img src="assets/sponsors/polygon.png" alt="" style="width:200px">
+            <img src="assets/sponsors/solana.png" alt="" style="width:200px">
             <img src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo.png" alt="" style="width:200px">
-            <img src="https://raw.githubusercontent.com/github/explore/c432a21abaa4326f9e64194b3a0a7224b4069ace/topics/codechef/codechef.png" alt="" style="width:200px">
+            <img src="assets/sponsors/devfolio.png" alt="" style="width:200px">
+            <img src="assets/sponsors/filecoin.png" alt="" style="width:200px">
+          </div>
+          <div style="padding: 30px 0px;">
+            <img src="assets/sponsors/replit.png" alt="" style="width:200px">
+            <img src="assets/sponsors/Property_1Variant4.png" alt="" style="width:200px">
           </div>
           <div style="padding: 30px 0px;">
               <h3 style="margin: 10px 0px;">Want To Sponsor</h3>
-              <button id="Cont">Contact Us</button>
+              <!-- <button id="Cont">Contact Us</button> -->
+              <button id="Cont" style="vertical-align:middle"><span>Connect </span></button>
           </div>
         </div>
       </div>
