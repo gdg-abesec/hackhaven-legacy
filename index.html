@@ -343,7 +343,7 @@
   </style>
   <script data-wized-id="0iCiVe9uuEz8sCR0BVAh" src="https://embed.wized.com"></script>
   <script src="https://embed.wized.com/0iCiVe9uuEz8sCR0BVAh.js"></script>
-  <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.339/build/spline-viewer.js"></script>
+  <!-- <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.339/build/spline-viewer.js"></script> -->
 </head>
 
 <body>
@@ -846,63 +846,111 @@ a,
   right: 0;
 }
 .lab_head {
-    display: flex; /* Use Flexbox for layout */
-    align-items: center; /* Center items vertically */
-    justify-content: center; /* Center items horizontally */
-    text-align: center; /* Center text */
-    padding: 20px; /* Add some padding */
-    margin: 0 auto; /* Center the block */
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    padding: 20px; 
+    margin: 0 auto; 
 }
 
 .lab_head span {
-    display: flex; /* Use Flexbox for the span to align items */
-    align-items: center; /* Center items vertically */
+    display: flex; 
+    align-items: center; 
 }
 
 .sub_lab_head {
-    display: flex; /* Use Flexbox for sub_lab_head */
-    flex-direction: column; /* Stack h4 and h6 vertically */
-    align-items: center; /* Center items horizontally */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
 }
 
 .sub_lab_head h4 {
-    font-size: 1.5em; /* Adjust font size for h4 */
-    margin: 0; /* Remove default margin */
+    font-size: 1.5em; 
+    margin: 0; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    flex-shrink: 0; 
 }
-
 .sub_lab_head h6 {
-    font-size: 1.2em; /* Adjust font size for h6 */
-    margin: 0; /* Remove default margin */
+    font-size: 1.2em; 
+    margin: 0; 
 }
 
-/* Responsive Media Queries */
+
 @media (max-width: 768px) {
     .lab_head {
-        flex-direction: column; /* Stack items vertically on smaller screens */
+        flex-direction: column; 
     }
 
     .sub_lab_head {
-        align-items: center; /* Center items horizontally */
+        align-items: center; 
     }
 
     .sub_lab_head h4 {
-        font-size: 1.3em; /* Slightly smaller font size for h4 */
+        font-size: 1.3em; 
+        white-space: nowrap;
     }
 
     .sub_lab_head h6 {
-        font-size: 1em; /* Slightly smaller font size for h6 */
+        font-size: 1em; 
     }
 }
 
 @media (max-width: 480px) {
     .sub_lab_head h4 {
-        font-size: 1.1em; /* Further reduce font size for h4 */
+        font-size: 1.1em; 
+        white-space: nowrap;
     }
 
     .sub_lab_head h6 {
-        font-size: 0.9em; /* Further reduce font size for h6 */
+        font-size: 0.9em; 
     }
 }
+.hero-shape__top-left.is--spline {
+  position: absolute;
+  top: 8vh; /* Increased from original position, adjust this value as needed  15 */
+  left: 0;
+  z-index: -1;
+}
+
+/* If you need more specific adjustments for different screen sizes */
+@media screen and (max-width: 991px) {
+  .hero-shape__top-left.is--spline {
+    top: 13vh; /*20 */
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero-shape__top-left.is--spline {
+    top: 18vh; /* 25*/
+  }
+}
+.sponsor-container {
+            padding: 30px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .sponsor-container img {
+            width: 200px; /* Default width */
+            margin: 10px; /* Space between images */
+            transition: transform 0.2s; /* Smooth scaling effect */
+        }
+        .sponsor-container img:hover {
+            transform: scale(1.1); /* Scale up on hover */
+        }
+        @media (max-width: 768px) {
+            .sponsor-container img {
+                width: 150px; /* Adjust size for medium screens */
+            }
+        }
+        @media (max-width: 480px) {
+            .sponsor-container img {
+                width: 100px; /* Adjust size for small screens */
+            }
+        }
         </style>
       </div>
     </div>
@@ -1507,6 +1555,17 @@ a,
                         fill="currentColor" />
                     </svg>
                   </div> -->
+                  <div class="button-social__bg"></div>
+                </a>
+                <a aria-label="commudle community" href="https://www.commudle.com/communities/gdg-abesec" 
+                       target="_blank" class="button-social is--large w-inline-block">
+                       <div class="svg-embed w-embed">
+                           <svg width="1.125em" height="1.125em" viewBox="0 0 24 24" fill="none" 
+                              xmlns="http://www.w3.org/2000/svg">
+                             <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"
+                                  fill="currentColor"/>
+                                     </svg>
+                     </div>
                   <div class="button-social__bg"></div>
                 </a>
               </div>
@@ -3161,7 +3220,7 @@ a,
             <!-- <img src="./assets/sponsors/polygon.png" alt="" style="width:200px">
             <img src="./assets/sponsors/Property_1Variant4.png" alt="" style="width:200px"> -->
           </div>
-          <div style="padding: 30px 0px;">
+          <!-- <div style="padding: 30px 0px;">
   
             <h3 style="margin: 10px 0px;"> Past Sponsors</h3>
             <img src="assets/sponsors/polygon.png" alt="" style="width:200px">
@@ -3173,7 +3232,20 @@ a,
           <div style="padding: 30px 0px;">
             <img src="assets/sponsors/replit.png" alt="" style="width:200px">
             <img src="assets/sponsors/Property_1Variant4.png" alt="" style="width:200px">
-          </div>
+          </div> -->
+          <div>
+            <h3 style="margin: 10px 0;">Past Sponsors</h3>
+            <div class="sponsor-container">
+                <img src="assets/sponsors/polygon.png" alt="">
+                <img src="assets/sponsors/solana.png" alt="">
+                <img src="assets/sponsors/github.png" alt="">
+                <img src="assets/sponsors/devfolio.png" alt="">
+                <img src="assets/sponsors/filecoin.png" alt="">
+                <img src="assets/sponsors/replit.png" alt="">
+                <img src="assets/sponsors/Property_1Variant4.png" alt="">
+            </div>
+        </div>
+
           <div style="padding: 30px 0px;">
               <h3 style="margin: 10px 0px;">Want To Sponsor</h3>
               <!-- <button id="Cont">Contact Us</button> -->
@@ -3617,6 +3689,17 @@ a,
                 </div>
                 <div class="button-social__bg"></div>
               </a> -->
+              <a aria-label="commudle community" href="https://www.commudle.com/communities/gdg-abesec" 
+                       target="_blank" class="button-social is--large w-inline-block">
+                       <div class="svg-embed w-embed">
+                           <svg width="1.125em" height="1.125em" viewBox="0 0 24 24" fill="none" 
+                              xmlns="http://www.w3.org/2000/svg">
+                             <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"
+                                  fill="currentColor"/>
+                                     </svg>
+                     </div>
+                  <div class="button-social__bg"></div>
+                </a>
             </div>
             <div id="w-node-_155cf899-b288-620f-0863-bdea4e312711-96d95767" class="footer_text">
               Copyright <span id="currentyear">2024</span> - GDG-ABESEC
