@@ -343,7 +343,7 @@
   </style>
   <script data-wized-id="0iCiVe9uuEz8sCR0BVAh" src="https://embed.wized.com"></script>
   <script src="https://embed.wized.com/0iCiVe9uuEz8sCR0BVAh.js"></script>
-  <!-- <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.339/build/spline-viewer.js"></script> -->
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.339/build/spline-viewer.js"></script>
 </head>
 
 <body>
@@ -848,84 +848,122 @@ a,
 .lab_head {
     display: flex; 
     align-items: center; 
-    justify-content: center; 
-    text-align: center; 
-    padding: 20px; 
-    margin: 0 auto; 
+    justify-content: flex-start;
+    text-align: left;
+    padding: 15px; /* Reduced padding */
+    margin: 0 auto;
+    width: 100%;
 }
 
 .lab_head span {
     display: flex; 
-    align-items: center; 
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.lab_head img {
+    width: 65px !important; /* Base size for desktop */
+    height: 50px !important;
+    object-fit: contain; /* Maintains aspect ratio */
+    margin-right: 10px;
 }
 
 .sub_lab_head {
     display: flex; 
     flex-direction: column; 
-    align-items: center; 
+    align-items: flex-start;
+    margin-left: 5px;
 }
 
 .sub_lab_head h4 {
-    font-size: 1.5em; 
+    font-size: 1.4em; 
     margin: 0; 
     white-space: nowrap; 
     overflow: hidden; 
-    text-overflow: ellipsis; 
-    flex-shrink: 0; 
-}
-.sub_lab_head h6 {
-    font-size: 1.2em; 
-    margin: 0; 
+    text-overflow: ellipsis;
+    line-height: 1.2; /* Improved line height */
 }
 
+.sub_lab_head h6 {
+    font-size: 1.1em; 
+    margin: 0;
+    line-height: 1.2; /* Improved line height */
+}
 
 @media (max-width: 768px) {
     .lab_head {
-        flex-direction: column; 
+        padding: 10px;
     }
 
-    .sub_lab_head {
-        align-items: center; 
+    .lab_head img {
+        width: 50px !important; /* Medium screen size */
+        height: 40px !important;
     }
 
     .sub_lab_head h4 {
-        font-size: 1.3em; 
-        white-space: nowrap;
+        font-size: 1.1em;
     }
 
     .sub_lab_head h6 {
-        font-size: 1em; 
+        font-size: 0.9em;
     }
 }
 
 @media (max-width: 480px) {
+    .lab_head {
+        padding: 8px;
+    }
+
+    .lab_head img {
+        width: 45px !important; /* Mobile screen size */
+        height: 35px !important;
+        margin-right: 8px;
+    }
+    
     .sub_lab_head h4 {
-        font-size: 1.1em; 
-        white-space: nowrap;
+        font-size: 0.9em;
     }
 
     .sub_lab_head h6 {
-        font-size: 0.9em; 
+        font-size: 0.7em;
     }
 }
-.hero-shape__top-left.is--spline {
+
+/* For very small screens */
+@media (max-width: 360px) {
+    .lab_head img {
+        width: 40px !important;
+        height: 32px !important;
+        margin-right: 6px;
+    }
+
+    .sub_lab_head h4 {
+        font-size: 0.8em;
+    }
+
+    .sub_lab_head h6 {
+        font-size: 0.6em;
+    }
+}
+
+ .hero-shape__top-left.is--spline {
   position: absolute;
-  top: 8vh; /* Increased from original position, adjust this value as needed  15 */
+  top: 8vh; 
   left: 0;
   z-index: -1;
 }
 
-/* If you need more specific adjustments for different screen sizes */
+
 @media screen and (max-width: 991px) {
   .hero-shape__top-left.is--spline {
-    top: 13vh; /*20 */
+    top: 13vh; 
   }
 }
 
 @media screen and (max-width: 767px) {
   .hero-shape__top-left.is--spline {
-    top: 18vh; /* 25*/
-  }
+    top: 18vh; 
+  } 
 }
 .sponsor-container {
             padding: 30px 0;
@@ -934,12 +972,12 @@ a,
             justify-content: center;
         }
         .sponsor-container img {
-            width: 200px; /* Default width */
-            margin: 10px; /* Space between images */
-            transition: transform 0.2s; /* Smooth scaling effect */
+            width: 200px; 
+            margin: 10px; 
+            transition: transform 0.2s; 
         }
         .sponsor-container img:hover {
-            transform: scale(1.1); /* Scale up on hover */
+            transform: scale(1.1); 
         }
         @media (max-width: 768px) {
             .sponsor-container img {
@@ -950,16 +988,16 @@ a,
             .sponsor-container img {
                 width: 100px; /* Adjust size for small screens */
             }
-        }
+        }    
         </style>
       </div>
     </div>
     <div style="display: block" class="load-wrapper">
-      <!-- <div data-preserve-aspect-ratio="xMidYMid slice" data-is-ix2-target="1" class="load-lottie"
+      <div data-preserve-aspect-ratio="xMidYMid slice" data-is-ix2-target="1" class="load-lottie"
         data-w-id="da3beadc-5727-b3ee-56ff-b6620217739a" data-animation-type="lottie"
         data-src="https://uploads-ssl.webflow.com/642efdd8e345585424d95764/645112089317d2a24dac6541_ncc%20pageload.lottie"
         data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="3.036369579362504"
-        data-duration="0"></div> -->
+        data-duration="0"></div>
     </div>
     <div style="display: none" class="modal-wrapper">
       <div data-w-id="49e08f0c-6393-a410-d05d-552b277761a4" style="opacity: 0" class="modal-wrapper__bg"></div>
@@ -1715,12 +1753,12 @@ a,
             </div>
           </div>
         </div>
-        <div 
-	class="apply-button" 
-	data-hackathon-slug="hackhaven2" 
-	data-button-theme="light"
-	style="height: 44px; width: 312px"
-></div>
+        <!-- <div 
+	          class="apply-button" 
+	          data-hackathon-slug="hackhaven2" 
+	          data-button-theme="light"
+	          style="height: 44px; width: 312px"
+>           </div> -->
         <div class="flex-vertical align-c gap-1_5rem z-index-1">
           <div class="apply-button" data-hackathon-slug="hackhaven" data-button-theme="light"
             style="height: 44px; width: 312px"></div>
@@ -3684,7 +3722,8 @@ a,
                   </svg>
                 </div>
                 <div class="button-social__bg"></div>
-               </a><!--<a aria-label="youtube" href="https://www.youtube.com/channel/UCQkQlvRNyqchQC64-hYwI5w"
+               </a>
+               <!--<a aria-label="youtube" href="https://www.youtube.com/channel/UCQkQlvRNyqchQC64-hYwI5w"
                 target="_blank" class="button-social is--large w-inline-block">
                 <div class="svg-embed w-embed">
                   <svg width="1.125em" height="1.125em" viewBox="0 0 48 48" fill="none"
@@ -3871,7 +3910,7 @@ a,
       },
     });
   </script>
-  <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
+  <!-- <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script> -->
   <script src="assets/timer.js"></script>
 </body>
 
