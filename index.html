@@ -340,6 +340,81 @@
         margin: auto;
       }
     }
+
+    .text-seffect {
+      transition: all 0.3s ease;
+    }
+
+    .pop-3d {
+      color: #333;
+      text-shadow: none;
+      transition: all 0.3s ease;
+    }
+
+    .pop-3d:hover {
+      color: #4d65ff;
+      text-shadow: 
+        1px 1px 0 #000,
+        2px 2px 0 #000,
+        3px 3px 0 #000,
+        4px 4px 0 #000;
+      transform: translate(-4px, -4px);
+    }
+
+    .register-count {
+            color: #0a0a14;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .r-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 80px;
+        }
+
+        .stats-container {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            max-width: 1200px;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .r-number {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .themes .r-number {
+            color: #40E0D0;
+        }
+
+        .hours .r-number {
+            color: #FF69B4;
+        }
+
+        .participants .r-number {
+            color: #FFA500;
+        }
+
+        .r-label {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
   </style>
   <script data-wized-id="0iCiVe9uuEz8sCR0BVAh" src="https://embed.wized.com"></script>
   <script src="https://embed.wized.com/0iCiVe9uuEz8sCR0BVAh.js"></script>
@@ -1514,7 +1589,7 @@ a,
                     <div class="heading-style-h5">FAQ</div>
                     <div class="menu-link__line"></div>
                   </a>
-                  <!-- <a href="https://hackhaven.devfolio.co/" class="menu-link is--main w-inline-block">
+                  <a href="https://hackhaven2.devfolio.co/" class="menu-link is--main w-inline-block">
                     <div>
                       <div class="heading-style-h5">Register Now</div>
                       <div class="menu-link__line is--main"></div>
@@ -1525,7 +1600,7 @@ a,
                         loading="lazy" alt="" class="menu-link__main-arrow" />
                       <div class="menu-link__main-bg"></div>
                     </div>
-                  </a> -->
+                  </a>
                 </div>
               </div>
               <div data-w-id="620c86dc-c5a8-1d37-9a29-7e45bc0d004b" class="button-group is--large">
@@ -1816,7 +1891,7 @@ a,
               <div id="w-node-a84a95a7-3927-13c7-354e-47f4a8e20bab-96d95767" class="title-pad__right">
                 <div class="max-width-medium"></div>
                 <h2 class="heading-style-h4 max-width-medium">
-                  Join the best 12HR HACKATHON
+                  Join the best 24HR HACKATHON
                   <span class="span-outlined">@ABESEC</span>
 
                 </h2>
@@ -1875,10 +1950,10 @@ a,
 8-9 closing ceremony
 -->
 
-             <section  data-scroll-section="" class="section_home-roadmap section">
-              <div class="padding-global">
-                <div class="padding-section-small">
-                  <div class="main-grid row-gap__1rem">
+             <!-- <section  data-scroll-section="" class="section_home-roadmap section"> -->
+              <!-- <div class="padding-global"> -->
+                <!-- <div class="padding-section-small"> -->
+                  <!-- <div class="main-grid row-gap__1rem"> -->
                     <!-- <div id="w-node-_2e0c9d9d-1728-e6d6-d3fb-0d36f36894b6-96d95767" class="flex-horizontal">
                       <div class="rel-w flex-center">
                         <h5 id="w-node-_310f7b67-190d-e01b-5715-32bf4f902d83-96d95767" class="heading-style-display">
@@ -2193,15 +2268,36 @@ a,
                       </div>
 
                     </div> -->
-                  </div>
+                  <!-- </div> -->
                   <!-- <p style="text-align: center;"> <b>Note:</b> Hacking Will go on throughout the Event Simultaneously
                   </p> -->
-                </div>
-              </div>
-            </section>
+                <!-- </div> -->
+              <!-- </div> -->
+            <!-- </section> -->
           </div>
         </div>
+
+        <section class="register-count">
+          <h1 class="r-title">What is Hack Haven 2.O?</h1>
+          <div class="stats-container">
+              <div class="stat-item themes">
+                  <div class="r-number">4</div>
+                  <div class="r-label">Themes</div>
+              </div>
+              <div class="stat-item hours">
+                  <div class="r-number">100+</div>
+                  <div class="r-label">Projects</div>
+              </div>
+              <div class="stat-item participants">
+                  <div class="r-number">4,000+</div>
+                  <div class="r-label">Participants</div>
+              </div>
+          </div>
+      </section>
       </section> 
+
+      
+
       <section id="tools" data-scroll-section="" class="section_home-tools section is--dark"> 
         <div class="padding-global">
           <div class="padding-section-large">
@@ -2221,7 +2317,7 @@ a,
             <div class="tools-dot__w">
               <div data-w-id="2fa8e733-5dc4-c145-5e6d-9004c81f20ff" class="tools_icon-grid">
                 <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Sustainable_Development_Goal_16PeaceJusticeInstitutions.svg/1200px-Sustainable_Development_Goal_16PeaceJusticeInstitutions.svg.png"
+                  src="https://cdn.iconscout.com/icon/free/png-256/free-bitcoin-icon-download-in-svg-png-gif-file-formats--logo-cryptocurrency-coins-currency-pack-business-icons-1545921.png"
                   loading="lazy" style="
                       -webkit-transform: translate3d(0, 0, 0) scale3d(0, 0, 1)
                         rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
@@ -2233,7 +2329,7 @@ a,
                         rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
                     " data-w-id="e8a9f07b-a691-024a-8173-48af3d945ed8"
                   id="w-node-e8a9f07b-a691-024a-8173-48af3d945ed8-96d95767" alt="Make logo" class="tools_icon" /><img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Sustainable_Development_Goal_05GenderEquality.svg/1200px-Sustainable_Development_Goal_05GenderEquality.svg.png"
+                  src="https://cdn-icons-png.flaticon.com/512/627/627266.png"
                   loading="lazy" style="
                       -webkit-transform: translate3d(0, 0, 0) scale3d(0, 0, 1)
                         rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
@@ -2245,7 +2341,7 @@ a,
                         rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
                     " data-w-id="8382dd80-bea8-3feb-d9f7-c05d65d52482"
                   id="w-node-_8382dd80-bea8-3feb-d9f7-c05d65d52482-96d95767" alt="loom logo" class="tools_icon" /><img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Sustainable_Development_Goal_09Industry.svg/1200px-Sustainable_Development_Goal_09Industry.svg.png"
+                  src="https://cdn.iconscout.com/icon/free/png-256/free-blockchain-icon-download-in-svg-png-gif-file-formats--bitcoin-logo-technology-secure-pack-business-icons-411041.png"
                   loading="lazy" style="
                       -webkit-transform: translate3d(0, 0, 0) scale3d(0, 0, 1)
                         rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
@@ -2258,7 +2354,7 @@ a,
                     " data-w-id="0082d473-75e5-70ff-ddec-f2b417e7252a"
                   id="w-node-_0082d473-75e5-70ff-ddec-f2b417e7252a-96d95767" alt="webflow logo"
                   class="tools_icon" /><img
-                  src="https://www.un.org/esa/ffd/ffddialogue/images/E_SDG%20goals_icons-individual-rgb-08.png"
+                  src="https://cdn-icons-png.flaticon.com/512/2620/2620769.png"
                   loading="lazy" style="
                       -webkit-transform: translate3d(0, 0, 0) scale3d(0, 0, 1)
                         rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
@@ -2270,7 +2366,7 @@ a,
                         rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
                     " data-w-id="442453d4-38c7-3967-2fbc-67d8eb956df9"
                   id="w-node-_442453d4-38c7-3967-2fbc-67d8eb956df9-96d95767" alt="asana logo" class="tools_icon" /><img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Sustainable_Development_Goal_03GoodHealth.svg/1200px-Sustainable_Development_Goal_03GoodHealth.svg.png"
+                  src="https://i.pinimg.com/564x/24/02/fe/2402fe14e593e3b67770420d05c7cb5c.jpg"
                   loading="lazy" style="
                       -webkit-transform: translate3d(0, 0, 0) scale3d(0, 0, 1)
                         rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
@@ -2282,7 +2378,7 @@ a,
                         rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
                     " data-w-id="d23c6132-1eb7-bcc3-c990-43e8f5543087"
                   iaa rhad="w-node-d23c6132-1eb7-bcc3-c990-43e8f5543087-96d95767" alt="notion logo" class="tools_icon" /><img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Sustainable_Development_Goal_02ZeroHunger.svg/1200px-Sustainable_Development_Goal_02ZeroHunger.svg.png"
+                  src="https://cdn2.iconfinder.com/data/icons/hackathon-1/100/computer_savvy_hackathon_development_business_developer_coding-512.png"
                   loading="lazy" style="
                       -webkit-transform: translate3d(0, 0, 0) scale3d(0, 0, 1)
                         rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
@@ -2295,7 +2391,7 @@ a,
                     " data-w-id="5b512e2f-9630-97a3-d1c7-8fe276a66702"
                   id="w-node-_5b512e2f-9630-97a3-d1c7-8fe276a66702-96d95767" alt="airtable logo"
                   class="tools_icon" /><img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Sustainable_Development_Goal_07CleanEnergy.svg/1200px-Sustainable_Development_Goal_07CleanEnergy.svg.png"
+                  src="https://static-00.iconduck.com/assets.00/web-developer-illustration-1004x1024-wcqgbag3.png"
                   loading="lazy" style="
                       -webkit-transform: translate3d(0, 0, 0) scale3d(0, 0, 1)
                         rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
@@ -2307,7 +2403,7 @@ a,
                         rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
                     " data-w-id="b2bff10a-d92a-3b58-024f-bfc7e6ce7684"
                   id="w-node-b2bff10a-d92a-3b58-024f-bfc7e6ce7684-96d95767" alt="framer logo" class="tools_icon" /><img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Sustainable_Development_Goal_11SustainableCities.svg/1200px-Sustainable_Development_Goal_11SustainableCities.svg.png"
+                  src="https://banner2.cleanpng.com/20180608/qha/kisspng-web-development-computer-programming-computer-icon-eed-5b1a243f8db878.0661128915284398715805.jpg"
                   loading="lazy" style="
                       -webkit-transform: translate3d(0, 0, 0) scale3d(0, 0, 1)
                         rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
@@ -2319,7 +2415,7 @@ a,
                         rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
                     " data-w-id="5069dc41-7be3-90e5-f3f4-0f08427e5e34"
                   id="w-node-_5069dc41-7be3-90e5-f3f4-0f08427e5e34-96d95767" alt="bubble logo" class="tools_icon" /><img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Sustainable_Development_Goal_10ReducedInequalities.svg/1200px-Sustainable_Development_Goal_10ReducedInequalities.svg.png"
+                  src="https://i.pinimg.com/736x/a5/58/b4/a558b426cb8973523f37bbed94cf0f09.jpg"
                   loading="lazy" style="
                       -webkit-transform: translate3d(0, 0, 0) scale3d(0, 0, 1)
                         rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
@@ -2331,7 +2427,7 @@ a,
                         rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
                     " data-w-id="77742c6d-c1ee-b196-590d-4e37fdd389a5"
                   id="w-node-_77742c6d-c1ee-b196-590d-4e37fdd389a5-96d95767" alt="slack logo" class="tools_icon" /><img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Sustainable_Development_Goal_01NoPoverty.svg/1200px-Sustainable_Development_Goal_01NoPoverty.svg.png"
+                  src="https://cdn-icons-png.freepik.com/512/8361/8361102.png"
                   loading="lazy" style="
                       -webkit-transform: translate3d(0, 0, 0) scale3d(0, 0, 1)
                         rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
@@ -2446,7 +2542,7 @@ a,
                 <div class="roadmap_item">
                   <div class="roadmap_item-title_wrapper">
                     <div class="roadmap_item-title">
-                      <div class="rel-w"> 07th December - Announcement</div>
+                      <div class="rel-w"> 15th January - Announcement</div>
                       <div class="roadmap-item-title-bg is--blue"></div>
                     </div>
                   </div>
@@ -2472,7 +2568,7 @@ a,
                 <div class="roadmap_item is--done">
                   <div class="roadmap_item-title_wrapper is-left">
                     <div class="roadmap_item-title is--left">
-                      <div class="rel-w">08th December - Registrations Starts</div>
+                      <div class="rel-w">20th January - Registrations Starts</div>
                       <div class="roadmap-item-title-bg is--orange"></div>
                     </div>
                   </div>
@@ -2491,7 +2587,7 @@ a,
                 <div class="roadmap_item">
                   <div class="roadmap_item-title_wrapper">
                     <div class="roadmap_item-title">
-                      <div class="rel-w">15th December - Registration Ends</div>
+                      <div class="rel-w">22th March - Registration Ends</div>
                       <div class="roadmap-item-title-bg"></div>
                     </div>
                   </div>
@@ -2517,7 +2613,7 @@ a,
                 <div class="roadmap_item">
                   <div class="roadmap_item-title_wrapper is-left">
                     <div class="roadmap_item-title is--left">
-                      <div class="rel-w">17th December - Teams Announcement</div>
+                      <div class="rel-w">28th March - Teams Announcement</div>
                       <div class="roadmap-item-title-bg is--orange"></div>
                     </div>
                   </div>
@@ -2536,7 +2632,7 @@ a,
                 <div class="roadmap_item">
                   <div class="roadmap_item-title_wrapper">
                     <div class="roadmap_item-title">
-                      <div class="rel-w">21st December - Offline Hackathon</div>
+                      <div class="rel-w">19-20th April - Offline Hackathon</div>
                       <div class="roadmap-item-title-bg"></div>
                     </div>
                   </div>
@@ -3254,31 +3350,28 @@ a,
         </div> -->
         <div class="padding-global">
         <div id="sponsors" style="padding: 20px 0px;text-align: center;">
-          <div style="padding: 30px 0px;">
+          <!-- <div style="padding: 30px 0px;">
   
             <h3 style="margin: 10px 0px;">Event Partner</h3>
-            <!-- <img src="./assets/sponsors/devfolio.png" alt="" style="width:200px"> -->
             <img style="border-radius: 50%;
             margin-top: 2rem;
             width: 200px;" src=".\assets\Primary Logo.png" alt="" >
-            <!-- <img src="./assets/sponsors/polygon.png" alt="" style="width:200px">
-            <img src="./assets/sponsors/Property_1Variant4.png" alt="" style="width:200px"> -->
-          </div>
-          <!-- <div style="padding: 30px 0px;">
-  
-            <h3 style="margin: 10px 0px;"> Past Sponsors</h3>
-            <img src="assets/sponsors/polygon.png" alt="" style="width:200px">
-            <img src="assets/sponsors/solana.png" alt="" style="width:200px">
-            <img src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo.png" alt="" style="width:200px">
-            <img src="assets/sponsors/devfolio.png" alt="" style="width:200px">
-            <img src="assets/sponsors/filecoin.png" alt="" style="width:200px">
-          </div>
-          <div style="padding: 30px 0px;">
-            <img src="assets/sponsors/replit.png" alt="" style="width:200px">
-            <img src="assets/sponsors/Property_1Variant4.png" alt="" style="width:200px">
           </div> -->
+          <div style="margin-top: 40px;">
+            <h3 style="margin: 10px 0; font-size: 3rem;" class="text-seffect pop-3d">Hackathon Sponsors</h3>
+            <div class="sponsor-container">
+              <img src="assets/sponsors/devfolio.png" alt="">
+              <img src="https://studyathome.org/wp-content/uploads/2022/12/Picture1.jpg" alt="">
+                <img src="https://cdn-images-1.medium.com/v2/resize:fit:716/1*OJ25prTzpR5WASeqWk5FwA@2x.png" alt="">
+                <img src="https://i.pinimg.com/736x/e1/38/13/e1381334de8e597a6f01e5f5ad2d1568.jpg" alt="">
+                <img src="assets/appwrite-new-20242212.logowik.com.jpg" alt="">
+                <img src="https://coding-blocks.github.io/assets/images/cb/cblogo.png" alt="">
+                <!-- <img src="assets/sponsors/Property_1Variant4.png" alt=""> -->
+            </div>
+          </div>
+
           <div>
-            <h3 style="margin: 10px 0;">Past Sponsors</h3>
+            <h3 style="margin: 10px 0; font-size: 2.5rem;" class="text-seffect pop-3d">Past Sponsors</h3>
             <div class="sponsor-container">
                 <img src="assets/sponsors/polygon.png" alt="">
                 <img src="assets/sponsors/solana.png" alt="">
@@ -3288,10 +3381,10 @@ a,
                 <img src="assets/sponsors/replit.png" alt="">
                 <img src="assets/sponsors/Property_1Variant4.png" alt="">
             </div>
-        </div>
+          </div>
 
           <div style="padding: 30px 0px;">
-              <h3 style="margin: 10px 0px;">Want To Sponsor</h3>
+              <h3 style="margin: 10px 0px; font-size: 2.5rem;" class="text-seffect pop-3d">Sponsor Us</h3>
               <!-- <button id="Cont">Contact Us</button> -->
                
               <a id="Cont" style="vertical-align:middle" href="https://www.commudle.com/fill-form/3040"><span>Connect </span></a>
@@ -3912,6 +4005,7 @@ a,
   </script>
   <!-- <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script> -->
   <script src="assets/timer.js"></script>
+  <script src="assets/registercount.js"></script>
 </body>
 
 
