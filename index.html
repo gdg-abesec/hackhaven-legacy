@@ -415,6 +415,64 @@
             opacity: 0.9;
         }
 
+        .reg-button-icon {
+  display: flex;
+  border: 3px #fff solid;
+  width: fit-content;
+  height: fit-content;
+  /* cursor: pointer; */
+}
+
+.reg-icon {
+  background-color: #fff;
+  padding: 10px 10px 5px 10px;
+}
+
+.reg-icon svg {
+  width: 25px;
+  height: 25px;
+}
+
+.reg-cube {
+  transition: all 0.4s;
+  transform-style: preserve-3d;
+  width: 200px;
+  height: 20px;
+}
+
+.reg-button-icon:hover {
+  border-color: #ff7a01;
+}
+
+.reg-button-icon:hover .reg-cube {
+  transform: rotateX(90deg);
+}
+
+.side {
+  position: absolute;
+  height: 47px;
+  width: 200px;
+  display: flex;
+  font-size: 0.8em;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+}
+
+.top {
+  background: #ff7a01;
+  color: black;
+  transform: rotateX(-90deg) translate3d(0, 13.5px, 2em);
+}
+
+.front {
+  background: #2400ff;
+  color: #fff;
+  transform: translate3d(0, 0, 1em);
+}
+
   </style>
   <script data-wized-id="0iCiVe9uuEz8sCR0BVAh" src="https://embed.wized.com"></script>
   <script src="https://embed.wized.com/0iCiVe9uuEz8sCR0BVAh.js"></script>
@@ -1853,6 +1911,17 @@ a,
               </div>
             </div>
           </div>
+
+          <div class="reg-button-icon">
+            <div class="reg-icon">
+              <img src="assets/Devfolio1-removebg-preview.png" alt="img" style="height: 30px;">
+            </div>
+            <div class="reg-cube">
+              <span class="side front">check it out !</span>
+              <a href="https://hackhaven2.devfolio.co/" class="side top">Register Now !</a>
+            </div>
+          </div>
+
           <div class="rel-w">
             <a href="https://devfolio.co/code-of-conduct" target="_blank" class="button-main is--orange w-inline-block">
               <div class="button-text__w">
