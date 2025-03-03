@@ -473,6 +473,82 @@
   transform: translate3d(0, 0, 1em);
 }
 
+.community-team-section {
+    /* background-color: #ffffff; */
+    color: #333;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.community-team-heading {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.community-team-heading h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.community-team-heading h2 span {
+    color: #4285F4;
+}
+
+.community-leaders-section {
+  padding: 40px; 
+  /* background-color: #f9f9f9;  */
+  color: #2c3e50; 
+  text-align: center; 
+}
+
+
+.leaders-container {
+  display: flex; 
+  justify-content: space-around; 
+  flex-wrap: wrap; 
+}
+
+.leader {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  margin: 20px; 
+}
+
+.leader-image {
+  width: 170px; 
+  height: 170px; 
+  border-radius: 50%;
+  background-size: cover; 
+  background-position: center; 
+  margin-bottom: 10px; 
+  transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.leader-image:hover {
+  transform: scale(1.1); 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+}
+
+.leader-name {
+  font-size: 1.2rem; 
+  margin: 5px 0;
+}
+
+.leader-designation {
+  font-size: 1rem;
+  color: #777; 
+}
+.green-underline {
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #34A853;
+    margin: 0 auto;
+}
   </style>
   <script data-wized-id="0iCiVe9uuEz8sCR0BVAh" src="https://embed.wized.com"></script>
   <script src="https://embed.wized.com/0iCiVe9uuEz8sCR0BVAh.js"></script>
@@ -3462,7 +3538,59 @@ a,
           </div>
         </div>
       </div>
-      </section>      
+      </section>    
+      
+      <section class="community-team-section" id="team" data-scroll-section="">
+        <div class="community-team-heading">
+          <h2>Meet The <span>TEAM</span></h2>
+          <span class="green-underline"></span>
+        </div>
+  
+        <div class="community-leaders-section">
+          <div class="leaders-container">
+            <div class="leader">
+              <div
+                class="leader-image"
+                style="background-image: url(Assets/organizer.jpg)"
+              ></div>
+              <h3 class="leader-name">Aviral Mittal</h3>
+              <p class="leader-designation">Organizer</p>
+            </div>
+            <div class="leader">
+              <div
+                class="leader-image"
+                style="background-image: url(Assets/AC1.jpg)"
+              ></div>
+              <h3 class="leader-name">Shubhangi Chandra</h3>
+              <p class="leader-designation">Acting General</p>
+            </div>
+            <div class="leader">
+              <div
+                class="leader-image"
+                style="background-image: url(Assets/AC2.jpg)"
+              ></div>
+              <h3 class="leader-name">Mudassir Imam</h3>
+              <p class="leader-designation">Acting General</p>
+            </div>
+            <div class="leader">
+              <div
+                class="leader-image"
+                style="background-image: url(Assets/AC3.jpeg)"
+              ></div>
+              <h3 class="leader-name">Parvani Sood</h3>
+              <p class="leader-designation">Acting General</p>
+            </div>
+          </div>
+  
+          <!-- <div class="view-all-container">
+            <a  class="view-all-button">
+              View All Members
+              <span class="arrow-icon">→</span>
+            </a>
+          </div> -->
+        </div>
+      </section>
+
       <div id="faq" data-scroll-section="" class="section_home-faq section">
         <div class="padding-global">
           <div class="padding-section-large">
